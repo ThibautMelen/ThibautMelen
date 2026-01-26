@@ -2,7 +2,7 @@
 
 # Hey, I'm Thibaut 👋
 
-### Co-founder [@SuperNovae Studio](https://github.com/supernovae-ai) · Building consumer products that matter · Paris 🇫🇷
+### Co-founder [@SuperNovae Studio](https://github.com/supernovae-st) · Building consumer products that matter · Paris 🇫🇷
 
 <br />
 
@@ -22,7 +22,7 @@ Small crew, massive impact.
 
 I build **consumer products** that are massively adopted, recognized for **quality**, **design**, and **simplicity** — while staying intentionally small.
 
-Co-founding [**SuperNovae Studio**](https://github.com/supernovae-ai) with [@NicolasCELLA](https://github.com/NicolasCELLA) — a product-obsessed, AI-native company where we use technology to amplify human leverage instead of scaling headcount.
+Co-founding [**SuperNovae Studio**](https://github.com/supernovae-st) with [@NicolasCELLA](https://github.com/NicolasCELLA) — a product-obsessed, AI-native company where we use technology to amplify human leverage instead of scaling headcount.
 
 ---
 
@@ -66,7 +66,7 @@ Deterministic YAML workflow engine · Launch an AI product in one day.
 ### 🌐 NovaNET
 **Network & Connectivity**
 
-[![Building](https://img.shields.io/badge/Status-Building-f59e0b?style=flat-square)](https://github.com/supernovae-ai/novanet)
+[![Building](https://img.shields.io/badge/Status-Building-f59e0b?style=flat-square)](https://github.com/supernovae-st/novanet)
 
 Graph-powered connectivity solutions.
 
@@ -80,7 +80,7 @@ Graph-powered connectivity solutions.
 **Rain.bo** · Link-in-bio pages<br />
 **Labs** · Internal tools & experiments
 
-[![SuperNovae](https://img.shields.io/badge/See_all-SuperNovae_Studio-8b5cf6?style=flat-square&logo=github)](https://github.com/supernovae-ai)
+[![SuperNovae](https://img.shields.io/badge/See_all-SuperNovae_Studio-8b5cf6?style=flat-square&logo=github)](https://github.com/supernovae-st)
 
 </td>
 </tr>
@@ -164,7 +164,7 @@ Graph-powered connectivity solutions.
 
 <div align="center">
 
-[![SuperNovae Studio](https://img.shields.io/badge/Co--founder-SuperNovae_Studio-8b5cf6?style=for-the-badge&logo=github)](https://github.com/supernovae-ai)
+[![SuperNovae Studio](https://img.shields.io/badge/Co--founder-SuperNovae_Studio-8b5cf6?style=for-the-badge&logo=github)](https://github.com/supernovae-st)
 
 <sub>Building from Paris 🇫🇷 · Small crew, massive impact ☄️🏴‍☠️</sub>
 
