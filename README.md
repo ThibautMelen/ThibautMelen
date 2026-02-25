@@ -47,13 +47,14 @@ Transform boring QR codes into stunning AI-generated art.
 </td>
 <td width="50%" valign="top">
 
-### 🦀 Nika
-**Native Infrastructure Kernel Agent**
+### 🦋 Nika
+**Open-Source Agentic CLI**
 
-[![Building](https://img.shields.io/badge/Status-Building-f59e0b?style=flat-square)](https://nika.sh)
+[![Live](https://img.shields.io/badge/Status-Live-10b981?style=flat-square)](https://nika.sh)
 [![Website](https://img.shields.io/badge/🌐-nika.sh-6366f1?style=flat-square)](https://nika.sh)
+[![GitHub](https://img.shields.io/badge/GitHub-nikadotsh-181717?style=flat-square&logo=github)](https://github.com/nikadotsh)
 
-Deterministic YAML workflow engine · Launch an AI product in one day.
+Turn YAML into AI workflows · Multi-agent orchestration made simple.
 
 [![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://rust-lang.org)
 [![YAML](https://img.shields.io/badge/YAML-CB171E?style=flat-square&logo=yaml&logoColor=white)](https://yaml.org)
