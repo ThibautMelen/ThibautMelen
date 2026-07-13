@@ -1,0 +1,44 @@
+name: refresh-activity
+
+# Weekly refresh of the ACTIVITY + UPDATED marker blocks in README.md.
+# Zero third-party actions beyond SHA-pinned checkout — everything else is
+# plain bash + the preinstalled `gh` CLI with the ambient GITHUB_TOKEN.
+# Triggers are schedule/manual only — no untrusted event input reaches a shell.
+# The UPDATED stamp guarantees a commit each run, which resets GitHub's
+# 60-day scheduled-workflow auto-disable timer.
+
+on:
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC — off the top of the hour
+  workflow_dispatch:
+
+permissions: {} # default-deny at workflow level
+
+concurrency:
+  group: refresh-activity
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write # the only grant — commit + push README.md
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          persist-credentials: true
+
+      - name: Rebuild dynamic blocks
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash .github/scripts/refresh-activity.sh
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet && { echo "No changes."; exit 0; }
+          git commit -m "chore: refresh activity block" -m "Co-Authored-By: Nika 🦋 <nika@supernovae.studio>"
+          git push

@@ -1,172 +1,96 @@
 <div align="center">
 
-# Hey, I'm Thibaut 👋
+# Thibaut Melen
 
-### Co-founder [@SuperNovae Studio](https://github.com/supernovae-st) · Building consumer products that matter · Paris 🇫🇷
+**Building [Nika](https://nika.sh) — Intent as Code — and the SuperNovae galaxy around it · Paris 🇫🇷**
 
-<br />
-
-[![Website](https://img.shields.io/badge/🌐-supernovae.studio-6366f1?style=for-the-badge)](https://supernovae.studio)
-[![Twitter](https://img.shields.io/badge/Twitter/X-@ThibautMelen-000000?style=for-the-badge&logo=x)](https://x.com/ThibautMelen)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-ThibautMelen-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ThibautMelen)
+[supernovae.studio](https://supernovae.studio) · [X — @ThibautMelen](https://x.com/ThibautMelen) · [LinkedIn](https://www.linkedin.com/in/ThibautMelen)
 
 </div>
 
+`Small crew, massive impact.` I co-found **[SuperNovae Studio](https://github.com/supernovae-st)** with [Nicolas](https://github.com/NicolasCELLA) — a product-obsessed, AI-native studio in Paris where technology amplifies human leverage instead of scaling headcount. *11 years of vision · 10 years of build.*
+
 ---
 
-## 🏴‍☠️ About
+## 🦋 Nika — Intent as Code
 
+**The workflow language for AI. One file, 4 verbs, one Rust binary. Local-first, any model, AGPL-3.0.**
+
+- **Audited before it runs** — `nika check` proves the plan, cost ceiling, permits and types before a single token is spent.
+- **Sovereign by default** — local models are first-class (Ollama · llama.cpp · vLLM), alongside Mistral, Anthropic, OpenAI & more. 16 providers, zero lock-in.
+- **Traced after** — every run leaves a hash-chained trace in `.nika/traces/`. Receipts, not vibes.
+
+```bash
+brew install supernovae-st/tap/nika
 ```
-Small crew, massive impact.
+
+```yaml
+nika: v1
+workflow: weekly-brief
+description: "one file · audited before it runs · traced after"
+model: ollama/qwen3:8b
+permits:
+  fs: { read: ["./notes.md"], write: ["./brief.md"] }
+  exec: false
+  tools: ["nika:read", "nika:write"]
+vars: { notes: "./notes.md" }
+tasks:
+  - id: read
+    invoke: { tool: "nika:read", args: { path: "${{ vars.notes }}" } }
+  - id: brief
+    depends_on: [read]
+    infer: { prompt: "3-bullet shipping brief of: ${{ tasks.read.output }}", max_tokens: 400 }
+  - id: save
+    depends_on: [brief]
+    invoke: { tool: "nika:write", args: { path: "./brief.md", content: "${{ tasks.brief.output }}" } }
 ```
 
-I build **consumer products** that are massively adopted, recognized for **quality**, **design**, and **simplicity** — while staying intentionally small.
+<sub>**[Site](https://nika.sh)** · **[Docs](https://docs.nika.sh)** · **[Spec](https://github.com/supernovae-st/nika-spec)** · **[VS Code](https://marketplace.visualstudio.com/items?itemName=supernovae.nika-lang)** · **[TypeScript SDK](https://www.npmjs.com/package/@supernovae-st/nika-client)** · **[Registry](https://github.com/supernovae-st/nika-registry)** · **[CI Action](https://github.com/supernovae-st/nika-action)**</sub>
 
-Co-founding [**SuperNovae Studio**](https://github.com/supernovae-st) with [@NicolasCELLA](https://github.com/NicolasCELLA) — a product-obsessed, AI-native company where we use technology to amplify human leverage instead of scaling headcount.
+## 🌌 The SuperNovae galaxy
 
----
+One small crew, several products, one discipline — everything orbits **[SuperNovae Studio](https://github.com/supernovae-st)**.
 
-## 🌌 What I'm Building
+**Products**
 
-<table>
-<tr>
-<td width="50%" valign="top">
+- 🦋 **[Nika](https://nika.sh)** — the flagship, above — engine · spec · VS Code · SDK · registry · CI
+- 🔲 **[QRcode AI](https://qrcode-ai.com)** — artistic QR codes people actually scan · led by Nicolas · [Rust scanner is open source](https://github.com/supernovae-st/qrcode-ai-scanner)
+- 🌈 **[Rain.bo](https://github.com/supernovae-st/rain.bo)** — link-in-bio, reimagined · brewing
 
-### 🔲 QRCode AI
-**AI-powered artistic QR codes**
+**Teaching & proofs**
 
-[![Live](https://img.shields.io/badge/Status-Live-10b981?style=flat-square)](https://qrcode-ai.com)
-[![Website](https://img.shields.io/badge/🌐-qrcode--ai.com-6366f1?style=flat-square)](https://qrcode-ai.com)
+- 🐔 **[Agentic AI Systems](https://github.com/ThibautMelen/agentic-ai-systems)** — agentic systems explained with chickens — taxonomy + runnable, CI-checked patterns · 280★+
+- 🧾 **[nika-workflow-proofs](https://github.com/ThibautMelen/nika-workflow-proofs)** — runnable answers to real maintainer asks — receipts included
 
-Transform boring QR codes into stunning AI-generated art.
+## 🧭 How I build
 
-[![Stable Diffusion](https://img.shields.io/badge/Stable_Diffusion-ff6f00?style=flat-square)](https://stability.ai)
-[![ControlNet](https://img.shields.io/badge/ControlNet-8b5cf6?style=flat-square)](https://github.com/lllyasviel/ControlNet)
-[![Nuxt](https://img.shields.io/badge/Nuxt-00DC82?style=flat-square&logo=nuxtdotjs&logoColor=white)](https://nuxt.com)
+- **Local-first & sovereign** — your workflows, your machine, your data. No vendor owns your state.
+- **AGPL forever** on the engine — no proprietary tier, no rug-pull.
+- **Intent as Code** — repeatable AI work belongs in files: auditable, diffable, traceable.
+- **Quality > speed** — ship when ready, semver honest.
+- **Craft over hype** — the long-arc discipline of the great studios (Ghibli · Pixar · Oda).
 
-</td>
-<td width="50%" valign="top">
+<sub>**Stack** · Rust · TypeScript — local models first-class (Ollama · llama.cpp · vLLM) + Mistral · Anthropic · OpenAI via Nika's 16-provider catalog — Vue/Nuxt · React · Tailwind</sub>
 
-### 🦋 Nika
-**Open-Source Agentic CLI**
+## 📡 Recently shipped
 
-[![Live](https://img.shields.io/badge/Status-Live-10b981?style=flat-square)](https://nika.sh)
-[![Website](https://img.shields.io/badge/🌐-nika.sh-6366f1?style=flat-square)](https://nika.sh)
-[![GitHub](https://img.shields.io/badge/GitHub-nika-181717?style=flat-square&logo=github)](https://github.com/supernovae-st/nika)
+<!-- ACTIVITY:START -->
+_Latest releases across the galaxy:_
 
-Turn YAML into AI workflows · Multi-agent orchestration made simple.
-
-[![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)](https://rust-lang.org)
-[![YAML](https://img.shields.io/badge/YAML-CB171E?style=flat-square&logo=yaml&logoColor=white)](https://yaml.org)
-
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🌐 NovaNET
-**Network & Connectivity**
-
-[![Building](https://img.shields.io/badge/Status-Building-f59e0b?style=flat-square)](https://github.com/supernovae-st/novanet)
-
-Graph-powered connectivity solutions.
-
-[![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=flat-square&logo=neo4j&logoColor=white)](https://neo4j.com)
-
-</td>
-<td width="50%" valign="top">
-
-### ⚡ More Universes
-**Jungo** · Translation & SEO engine<br />
-**Rain.bo** · Link-in-bio pages<br />
-**Labs** · Internal tools & experiments
-
-[![SuperNovae](https://img.shields.io/badge/See_all-SuperNovae_Studio-8b5cf6?style=flat-square&logo=github)](https://github.com/supernovae-st)
-
-</td>
-</tr>
-</table>
+- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.4)** `v1.0.4` · 2026-07-13
+- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
+- **[nika-vscode](https://github.com/supernovae-st/nika-vscode/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
+- **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
+- **[nika-agents](https://github.com/supernovae-st/nika-agents/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
+- **[nika.sh](https://github.com/supernovae-st/nika.sh/releases/tag/v4.15.0)** `v4.15.0` · 2026-07-12
+<!-- ACTIVITY:END -->
 
 ---
 
-## 🛠️ Tech Stack
+**Track the work** — right here, or [@ThibautMelen on X](https://x.com/ThibautMelen). **Reach me** — X DM, or open an issue on [nika](https://github.com/supernovae-st/nika/issues).
 
-<div align="center">
+<sub>🦋 This profile is a projection — identity lives in one YAML file, rendered deterministically, audited by [`nika check`](https://nika.sh), refreshed weekly by CI. *Intent as Code, applied to myself.*</sub>
 
-**Languages**
-
-[![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)](https://rust-lang.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
-
-**Frontend**
-
-[![Nuxt](https://img.shields.io/badge/Nuxt-00DC82?style=for-the-badge&logo=nuxtdotjs&logoColor=white)](https://nuxt.com)
-[![Vue](https://img.shields.io/badge/Vue-4FC08D?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org)
-[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-
-**Backend & Data**
-
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)](https://mongodb.com)
-[![Neo4j](https://img.shields.io/badge/Neo4j-4581C3?style=for-the-badge&logo=neo4j&logoColor=white)](https://neo4j.com)
-[![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
-
-**AI/ML**
-
-[![Stable Diffusion](https://img.shields.io/badge/Stable_Diffusion-ff6f00?style=for-the-badge)](https://stability.ai)
-[![ControlNet](https://img.shields.io/badge/ControlNet-8b5cf6?style=for-the-badge)](https://github.com/lllyasviel/ControlNet)
-[![Claude](https://img.shields.io/badge/Claude-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://anthropic.com)
-
-</div>
-
----
-
-## 🧭 Philosophy
-
-> *"We stay small by choice of freedom, not by constraint."*
-
-| | Principle |
-|:--:|:--|
-| 🎯 | **Product-Obsessed** · Even what's invisible must be simple, elegant, and delightful |
-| ✨ | **Quality Creates Adoption** · Adoption creates longevity |
-| 🎨 | **Taste-Driven** · Decisions by conviction, not A/B tests |
-| 🏝️ | **Stay Small** · Use AI & automation for leverage, not headcount |
-| 🏴‍☠️ | **Nakama** · Small crew vs giants — and we win |
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ThibautMelen&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b5cf6&icon_color=6366f1&text_color=c9d1d9)](https://github.com/ThibautMelen)
-
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ThibautMelen&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=8b5cf6&text_color=c9d1d9)](https://github.com/ThibautMelen)
-
-</div>
-
----
-
-## 🤝 Let's Connect
-
-<div align="center">
-
-[![Twitter](https://img.shields.io/badge/Twitter/X-@ThibautMelen-000000?style=for-the-badge&logo=x)](https://x.com/ThibautMelen)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ThibautMelen)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thibaut@supernovae.studio)
-
-<br />
-
-**Open to:** Collaborations · Interesting projects · Coffee chats ☕
-
-</div>
-
----
-
-<div align="center">
-
-[![SuperNovae Studio](https://img.shields.io/badge/Co--founder-SuperNovae_Studio-8b5cf6?style=for-the-badge&logo=github)](https://github.com/supernovae-st)
-
-<sub>Building from Paris 🇫🇷 · Small crew, massive impact ☄️🏴‍☠️</sub>
-
-</div>
+<!-- UPDATED:START -->
+<sub><em>Last refreshed: 2026-07-13 08:39 UTC</em></sub>
+<!-- UPDATED:END -->
