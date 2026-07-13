@@ -2,9 +2,9 @@
 
 # Thibaut Melen
 
-**Captain of [SuperNovae Studio](https://supernovae.studio) 🏴‍☠️ · building [Nika](https://nika.sh), Intent as Code · Paris 🇫🇷**
+<samp>Captain of [SuperNovae Studio](https://github.com/supernovae-st) 🏴‍☠️ · crafting [Nika](https://nika.sh), Intent as Code · Paris 🇫🇷</samp>
 
-[supernovae.studio](https://supernovae.studio) · [X · @ThibautMelen](https://x.com/ThibautMelen) · [LinkedIn](https://www.linkedin.com/in/ThibautMelen)
+<sub>[supernovae.studio](https://supernovae.studio) · [X · @ThibautMelen](https://x.com/ThibautMelen) · [LinkedIn](https://www.linkedin.com/in/ThibautMelen)</sub>
 
 </div>
 
@@ -69,7 +69,7 @@ tasks:
 ## 🧭 How I build
 
 - **Intent as Code** · repeatable AI work belongs in files: auditable, diffable, traceable.
-- **AGPL forever** on the engine · no proprietary tier.
+- **[AGPL forever](https://github.com/supernovae-st/nika/blob/main/LICENSE)** on the engine · no proprietary tier.
 - **Quality > speed** · ship when ready, semver honest.
 - **Craft over hype** · the long-arc discipline of the great studios (Ghibli · Pixar · Oda).
 
