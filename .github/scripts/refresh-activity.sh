@@ -38,7 +38,7 @@ query($q: String!) { search(query: $q, type: ISSUE, first: 15) {
   > /tmp/prs.md || : > /tmp/prs.md
 
 {
-  echo "_Latest releases across the galaxy:_"
+  echo "_Latest releases:_"
   echo ""
   cat /tmp/releases.md
   if [ -s /tmp/prs.md ]; then

@@ -14,9 +14,22 @@
 
 ## 🏴‍☠️ SuperNovae Studio
 
+<a href="https://github.com/supernovae-st"><img src="https://raw.githubusercontent.com/supernovae-st/.github/main/assets/supernovae-ship.gif" width="100%" alt="The SuperNovae ship" /></a>
+
 - **Small crew, massive impact** · [Nicolas](https://github.com/NicolasCELLA) and me, no headcount to scale: technology is the leverage.
 - **Chart your own seas** · local-first and open by default: your data, your models, no vendor owns your course.
 - **The flag is a butterfly** 🦋 · liberation through open source: AGPL engine, open spec, everything portable.
+
+**Products**
+
+- 🦋 **[Nika](https://nika.sh)** · the flagship, below: engine · spec · VS Code · SDK · registry · CI
+- 🔲 **[QRcode AI](https://qrcode-ai.com)** · artistic QR codes people actually scan · Nicolas at the helm · [the Rust scanner is open source](https://github.com/supernovae-st/qrcode-ai-scanner)
+- 🌈 **[Rain.bo](https://github.com/supernovae-st/rain-bo)** · link-in-bio, reimagined · brewing
+
+**Teaching & proofs**
+
+- 🐔 **[Agentic AI Systems](https://github.com/ThibautMelen/agentic-ai-systems)** · agentic systems explained with chickens: taxonomy + runnable, CI-checked patterns · 280★+
+- 🧾 **[nika-workflow-proofs](https://github.com/ThibautMelen/nika-workflow-proofs)** · runnable answers to real maintainer asks, receipts included
 
 ## 🦋 Nika · Intent as Code
 
@@ -53,21 +66,6 @@ tasks:
 
 <sub>**[Site](https://nika.sh)** · **[Docs](https://docs.nika.sh)** · **[Spec](https://github.com/supernovae-st/nika-spec)** · **[VS Code](https://marketplace.visualstudio.com/items?itemName=supernovae.nika-lang)** · **[TypeScript SDK](https://www.npmjs.com/package/@supernovae-st/nika-client)** · **[Registry](https://github.com/supernovae-st/nika-registry)** · **[CI Action](https://github.com/supernovae-st/nika-action)**</sub>
 
-## 🌌 The galaxy
-
-Everything orbits **[SuperNovae Studio](https://github.com/supernovae-st)**: one crew, several ships, one discipline.
-
-**Products**
-
-- 🦋 **[Nika](https://nika.sh)** · the flagship, above: engine · spec · VS Code · SDK · registry · CI
-- 🔲 **[QRcode AI](https://qrcode-ai.com)** · artistic QR codes people actually scan · Nicolas at the helm · [the Rust scanner is open source](https://github.com/supernovae-st/qrcode-ai-scanner)
-- 🌈 **[Rain.bo](https://github.com/supernovae-st/rain-bo)** · link-in-bio, reimagined · brewing
-
-**Teaching & proofs**
-
-- 🐔 **[Agentic AI Systems](https://github.com/ThibautMelen/agentic-ai-systems)** · agentic systems explained with chickens: taxonomy + runnable, CI-checked patterns · 280★+
-- 🧾 **[nika-workflow-proofs](https://github.com/ThibautMelen/nika-workflow-proofs)** · runnable answers to real maintainer asks, receipts included
-
 ## 🧭 How I build
 
 - **Intent as Code** · repeatable AI work belongs in files: auditable, diffable, traceable.
@@ -80,7 +78,7 @@ Everything orbits **[SuperNovae Studio](https://github.com/supernovae-st)**: one
 ## 📡 Recently shipped
 
 <!-- ACTIVITY:START -->
-_Latest releases across the galaxy:_
+_Latest releases:_
 
 - **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.4)** `v1.0.4` · 2026-07-13
 - **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
@@ -97,5 +95,5 @@ _Latest releases across the galaxy:_
 <sub>🦋 This profile is a projection: identity lives in one YAML file, rendered deterministically, audited by [`nika check`](https://nika.sh), refreshed weekly by CI. *Intent as Code, applied to myself.*</sub>
 
 <!-- UPDATED:START -->
-<sub><em>Last refreshed: 2026-07-13 08:39 UTC</em></sub>
+<sub><em>Last refreshed: 2026-07-13 09:21 UTC</em></sub>
 <!-- UPDATED:END -->
