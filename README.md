@@ -80,12 +80,12 @@ tasks:
 <!-- ACTIVITY:START -->
 _Latest releases:_
 
-- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.4)** `v1.0.4` · 2026-07-13
-- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
-- **[nika-vscode](https://github.com/supernovae-st/nika-vscode/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
-- **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
-- **[nika-agents](https://github.com/supernovae-st/nika-agents/releases/tag/v0.102.0)** `v0.102.0` · 2026-07-13
-- **[nika.sh](https://github.com/supernovae-st/nika.sh/releases/tag/v4.15.0)** `v4.15.0` · 2026-07-12
+- **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.104.0)** `v0.104.0` · 2026-07-18
+- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.6)** `v1.0.6` · 2026-07-18
+- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.104.0)** `v0.104.0` · 2026-07-17
+- **[nika.sh](https://github.com/supernovae-st/nika.sh/releases/tag/v4.17.0)** `v4.17.0` · 2026-07-13
+- **[nika-agents](https://github.com/supernovae-st/nika-agents/releases/tag/v0.103.0)** `v0.103.0` · 2026-07-13
+- **[nika-vscode](https://github.com/supernovae-st/nika-vscode/releases/tag/v0.103.0)** `v0.103.0` · 2026-07-13
 <!-- ACTIVITY:END -->
 
 ---
@@ -95,5 +95,5 @@ _Latest releases:_
 <sub>🦋 This profile is a projection: identity lives in one YAML file, rendered deterministically, audited by [`nika check`](https://nika.sh), refreshed weekly by CI. *Intent as Code, applied to myself.*</sub>
 
 <!-- UPDATED:START -->
-<sub><em>Last refreshed: 2026-07-13 09:21 UTC</em></sub>
+<sub><em>Last refreshed: 2026-07-20 07:22 UTC</em></sub>
 <!-- UPDATED:END -->
