@@ -36,7 +36,7 @@
 **The workflow language for AI. One file, 4 verbs, one Rust binary. Local-first, any model, AGPL-3.0.**
 
 - **Audited before it runs** · `nika check` proves the plan, the cost ceiling, the permits and the types before a single token is spent.
-- **Sovereign by default** · local models are first-class (Ollama · llama.cpp · vLLM), alongside Mistral, Anthropic, OpenAI and more: 16 providers, zero lock-in.
+- **Sovereign by default** · local models are first-class (Ollama · llama.cpp · vLLM), alongside Mistral, Anthropic, OpenAI and more: 17 providers, zero lock-in.
 - **Traced after** · every run leaves a hash-chained trace in `.nika/traces/`. Receipts, not vibes.
 
 ```bash
@@ -73,7 +73,7 @@ tasks:
 - **Quality > speed** · ship when ready, semver honest.
 - **Craft over hype** · the long-arc discipline of the great studios (Ghibli · Pixar · Oda).
 
-<sub>**Stack** · Rust · TypeScript · local models first-class (Ollama · llama.cpp · vLLM) + Mistral · Anthropic · OpenAI via Nika's 16-provider catalog · Vue/Nuxt · React · Tailwind</sub>
+<sub>**Stack** · Rust · TypeScript · local models first-class (Ollama · llama.cpp · vLLM) + Mistral · Anthropic · OpenAI via Nika's 17-provider catalog · Vue/Nuxt · React · Tailwind</sub>
 
 ## 📡 Recently shipped
 
