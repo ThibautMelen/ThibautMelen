@@ -80,10 +80,10 @@ tasks:
 <!-- ACTIVITY:START -->
 _Latest releases:_
 
-- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.107.2)** `v0.107.2` · 2026-08-02
-- **[nika-agents](https://github.com/supernovae-st/nika-agents/releases/tag/v0.107.0)** `v0.107.0` · 2026-08-02
-- **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.107.0)** `v0.107.0` · 2026-08-01
-- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.9)** `v1.0.9` · 2026-07-29
+- **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.108.0)** `v0.108.0` · 2026-08-06
+- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.11)** `v1.0.11` · 2026-08-06
+- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.108.0)** `v0.108.0` · 2026-08-05
+- **[nika-plugins](https://github.com/supernovae-st/nika-plugins/releases/tag/v0.107.0)** `v0.107.0` · 2026-08-02
 - **[nika-vscode](https://github.com/supernovae-st/nika-vscode/releases/tag/v0.106.0)** `v0.106.0` · 2026-07-28
 - **[qrcode-ai-scanner](https://github.com/supernovae-st/qrcode-ai-scanner/releases/tag/v0.9.0)** `v0.9.0` · 2026-07-20
 <!-- ACTIVITY:END -->
@@ -95,5 +95,5 @@ _Latest releases:_
 <sub>🦋 This profile is a projection: identity lives in one YAML file, rendered deterministically, audited by [`nika check`](https://nika.sh), refreshed weekly by CI. *Intent as Code, applied to myself.*</sub>
 
 <!-- UPDATED:START -->
-<sub><em>Last refreshed: 2026-08-03 07:26 UTC</em></sub>
+<sub><em>Last refreshed: 2026-08-10 06:45 UTC</em></sub>
 <!-- UPDATED:END -->
