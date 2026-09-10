@@ -24,7 +24,7 @@
 
 - 🦋 **[Nika](https://nika.sh)** · the flagship, below: engine · spec · VS Code · SDK · registry · CI
 - 🔲 **[QRcode AI](https://qrcode-ai.com)** · artistic QR codes people actually scan · Nicolas at the helm · [the Rust scanner is open source](https://github.com/supernovae-st/qrcode-ai-scanner)
-- 🌈 **[Rain.bo](https://github.com/supernovae-st/rain-bo)** · link-in-bio, reimagined · brewing
+- 🌈 **[rain.bo](https://github.com/supernovae-st/rain-bo)** · Your link-in-bio. Bento-grade. With the context on top.
 
 **Teaching & proofs**
 
@@ -44,27 +44,24 @@ brew install supernovae-st/tap/nika
 ```
 
 ```yaml
-nika: v1
-workflow: weekly-brief
-description: "one file · audited before it runs · traced after"
+nika: weekly-brief
 model: ollama/qwen3:8b
+const: { notes: "./notes.md" }
 permits:
   fs: { read: ["./notes.md"], write: ["./brief.md"] }
-  exec: false
   tools: ["nika:read", "nika:write"]
-vars: { notes: "./notes.md" }
 tasks:
-  - id: read
-    invoke: { tool: "nika:read", args: { path: "${{ vars.notes }}" } }
-  - id: brief
-    depends_on: [read]
-    infer: { prompt: "3-bullet shipping brief of: ${{ tasks.read.output }}", max_tokens: 400 }
-  - id: save
-    depends_on: [brief]
-    invoke: { tool: "nika:write", args: { path: "./brief.md", content: "${{ tasks.brief.output }}" } }
+  read:
+    invoke: { tool: "nika:read", args: { path: "${{ const.notes }}" } }
+  brief:
+    with: { notes: "${{ tasks.read.output }}" }
+    infer: { prompt: "3-bullet shipping brief of: ${{ with.notes }}", max_tokens: 400 }
+  save:
+    with: { body: "${{ tasks.brief.output }}" }
+    invoke: { tool: "nika:write", args: { path: "./brief.md", content: "${{ with.body }}" } }
 ```
 
-<sub>**[Site](https://nika.sh)** · **[Docs](https://docs.nika.sh)** · **[Spec](https://github.com/supernovae-st/nika-spec)** · **[VS Code](https://marketplace.visualstudio.com/items?itemName=supernovae.nika-lang)** · **[TypeScript SDK](https://www.npmjs.com/package/@supernovae-st/nika-client)** · **[Registry](https://github.com/supernovae-st/nika-registry)** · **[CI Action](https://github.com/supernovae-st/nika-action)**</sub>
+<sub>**[Site](https://nika.sh)** · **[Docs](https://docs.nika.sh)** · **[Spec](https://github.com/supernovae-st/nika-spec)** · **[VS Code](https://marketplace.visualstudio.com/items?itemName=supernovae.nika-lang)** · **[TypeScript SDK](https://github.com/supernovae-st/nika-client)** · **[Registry](https://github.com/supernovae-st/nika-registry)** · **[CI Action](https://github.com/supernovae-st/nika-action)**</sub>
 
 ## 🧭 How I build
 
