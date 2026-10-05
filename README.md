@@ -77,16 +77,12 @@ tasks:
 <!-- ACTIVITY:START -->
 _Latest releases:_
 
-- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.26)** `v1.0.26` · 2026-09-25
-- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.121.0)** `v0.121.0` · 2026-09-25
+- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.27)** `v1.0.27` · 2026-10-03
+- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.122.0)** `v0.122.0` · 2026-10-02
 - **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.120.3)** `v0.120.3` · 2026-09-20
 - **[nika-plugins](https://github.com/supernovae-st/nika-plugins/releases/tag/v0.120.3)** `v0.120.3` · 2026-09-20
 - **[gh-nika](https://github.com/supernovae-st/gh-nika/releases/tag/v0.2.0)** `v0.2.0` · 2026-09-18
 - **[nika-vscode](https://github.com/supernovae-st/nika-vscode/releases/tag/v0.109.2)** `v0.109.2` · 2026-08-19
-
-_Recent upstream contributions:_
-
-- 🔀 2026-09-23 · [Add Nika to Tools & Frameworks](https://github.com/muellerberndt/awesome-ai-security/pull/20) → `muellerberndt/awesome-ai-security`
 <!-- ACTIVITY:END -->
 
 ---
@@ -96,5 +92,5 @@ _Recent upstream contributions:_
 <sub>🦋 This profile is a projection: identity lives in one YAML file, rendered deterministically, audited by [`nika check`](https://nika.sh), refreshed weekly by CI. *Intent as Code, applied to myself.*</sub>
 
 <!-- UPDATED:START -->
-<sub><em>Last refreshed: 2026-09-28 06:56 UTC</em></sub>
+<sub><em>Last refreshed: 2026-10-05 07:01 UTC</em></sub>
 <!-- UPDATED:END -->
