@@ -86,7 +86,11 @@ _Latest releases:_
 
 _Recent upstream contributions:_
 
-- 🔀 2026-10-31 · [feat(scanner): prepare 0.11 mixed scanning and camera selection](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/8) → `qrcode-ai-com/qrcode-barcode-scanner`
+- 🔀 2026-11-06 · [feat(distribution): prepare chocolatey and document opencode](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/17) → `qrcode-ai-com/qrcode-barcode-scanner`
+- 🔀 2026-11-06 · [docs(distribution): document pinned skill install](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/16) → `qrcode-ai-com/qrcode-barcode-scanner`
+- 🔀 2026-11-06 · [fix(scoop): initialize the test runner shim directory](https://github.com/qrcode-ai-com/scoop-bucket/pull/1) → `qrcode-ai-com/scoop-bucket`
+- 🔀 2026-11-06 · [docs(scanner): improve install and mixed scan examples](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/15) → `qrcode-ai-com/qrcode-barcode-scanner`
+- 🔀 2026-11-06 · [docs(tap): show a reproducible mixed code scan](https://github.com/qrcode-ai-com/homebrew-tap/pull/2) → `qrcode-ai-com/homebrew-tap`
 <!-- ACTIVITY:END -->
 
 ---
@@ -96,5 +100,5 @@ _Recent upstream contributions:_
 <sub>🦋 This profile is a projection: identity lives in one YAML file, rendered deterministically, audited by [`nika check`](https://nika.sh), refreshed weekly by CI. *Intent as Code, applied to myself.*</sub>
 
 <!-- UPDATED:START -->
-<sub><em>Last refreshed: 2026-11-02 06:35 UTC</em></sub>
+<sub><em>Last refreshed: 2026-11-09 06:35 UTC</em></sub>
 <!-- UPDATED:END -->
