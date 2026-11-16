@@ -77,20 +77,20 @@ tasks:
 <!-- ACTIVITY:START -->
 _Latest releases:_
 
-- **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.124.1)** `v0.124.1` · 2026-10-28
-- **[nika-plugins](https://github.com/supernovae-st/nika-plugins/releases/tag/v0.124.1)** `v0.124.1` · 2026-10-28
-- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.32)** `v1.0.32` · 2026-10-28
-- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.124.1)** `v0.124.1` · 2026-10-28
+- **[nika-action](https://github.com/supernovae-st/nika-action/releases/tag/v1.0.35)** `v1.0.35` · 2026-11-13
+- **[nika-client](https://github.com/supernovae-st/nika-client/releases/tag/v0.124.4)** `v0.124.4` · 2026-11-12
+- **[nika-plugins](https://github.com/supernovae-st/nika-plugins/releases/tag/v0.124.4)** `v0.124.4` · 2026-11-12
+- **[nika](https://github.com/supernovae-st/nika/releases/tag/v0.124.4)** `v0.124.4` · 2026-11-12
 - **[nika-vscode](https://github.com/supernovae-st/nika-vscode/releases/tag/v0.120.0)** `v0.120.0` · 2026-10-24
 - **[gh-nika](https://github.com/supernovae-st/gh-nika/releases/tag/v0.2.0)** `v0.2.0` · 2026-09-18
 
 _Recent upstream contributions:_
 
-- 🔀 2026-11-06 · [feat(distribution): prepare chocolatey and document opencode](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/17) → `qrcode-ai-com/qrcode-barcode-scanner`
-- 🔀 2026-11-06 · [docs(distribution): document pinned skill install](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/16) → `qrcode-ai-com/qrcode-barcode-scanner`
-- 🔀 2026-11-06 · [fix(scoop): initialize the test runner shim directory](https://github.com/qrcode-ai-com/scoop-bucket/pull/1) → `qrcode-ai-com/scoop-bucket`
-- 🔀 2026-11-06 · [docs(scanner): improve install and mixed scan examples](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/15) → `qrcode-ai-com/qrcode-barcode-scanner`
-- 🔀 2026-11-06 · [docs(tap): show a reproducible mixed code scan](https://github.com/qrcode-ai-com/homebrew-tap/pull/2) → `qrcode-ai-com/homebrew-tap`
+- 🔀 2026-11-16 · [docs(readme): complete the runtime installation quick starts](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/84) → `qrcode-ai-com/qrcode-barcode-scanner`
+- 🔀 2026-11-14 · [fix(license): clarify archive grants and check runtime notices](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/83) → `qrcode-ai-com/qrcode-barcode-scanner`
+- 🔀 2026-11-14 · [feat(license): synchronize mit command adapter source](https://github.com/qrcode-ai-com/qrcode-barcode-scanner-go/pull/2) → `qrcode-ai-com/qrcode-barcode-scanner-go`
+- 🔀 2026-11-14 · [feat(license): synchronize mit command adapter source](https://github.com/qrcode-ai-com/qrcode-barcode-scanner-php/pull/2) → `qrcode-ai-com/qrcode-barcode-scanner-php`
+- 🔀 2026-11-14 · [feat(license): license scanner source and adapters under mit](https://github.com/qrcode-ai-com/qrcode-barcode-scanner/pull/82) → `qrcode-ai-com/qrcode-barcode-scanner`
 <!-- ACTIVITY:END -->
 
 ---
@@ -100,5 +100,5 @@ _Recent upstream contributions:_
 <sub>🦋 This profile is a projection: identity lives in one YAML file, rendered deterministically, audited by [`nika check`](https://nika.sh), refreshed weekly by CI. *Intent as Code, applied to myself.*</sub>
 
 <!-- UPDATED:START -->
-<sub><em>Last refreshed: 2026-11-09 06:35 UTC</em></sub>
+<sub><em>Last refreshed: 2026-11-16 06:41 UTC</em></sub>
 <!-- UPDATED:END -->
